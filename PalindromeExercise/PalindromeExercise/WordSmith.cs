@@ -10,7 +10,7 @@ namespace PalindromeExercise
     {
         public bool IsAPalindrome(string word)
         {
-            return (word == string.Join("", word.Reverse())) ? true : false;
+            return (word.ToLower() == string.Join("", word.ToLower().Reverse())) ? true : false;
         }
     }
 }
